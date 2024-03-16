@@ -73,7 +73,7 @@ $.ajax({
   type: 'get',
   url: 'https://apis.map.qq.com/ws/location/v1/ip',
   data: {
-    key: 'IOFBZ-NT2WB-ICNUK-NOLXB-4QKTF-KTFOH',  // 这里要写你的KEY!!!
+    key: 'KO4BZ-F4AEW-FTIRJ-YB4NT-YNHOZ-CVBXS',  // 这里要写你的KEY!!!
     output: 'jsonp',
   },
   dataType: 'jsonp',
@@ -99,14 +99,14 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(32.12857950, 118.83049350, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(32.128736, 118.830384, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
   //根据国家、省份、城市信息自定义欢迎语
   switch (ipLoacation.result.ad_info.nation) {
     case "日本":
-      posdesc = "よろしく，一起去看樱花吗";
+      posdesc = "よろしく,一起去看樱花吗";
       break;
     case "美国":
       posdesc = "Let us live in peace!";
@@ -115,7 +115,7 @@ function showWelcome() {
       posdesc = "想同你一起夜乘伦敦眼";
       break;
     case "俄罗斯":
-      posdesc = "干了这瓶伏特加！";
+      posdesc = "干了这瓶伏特加!";
       break;
     case "法国":
       posdesc = "C'est La Vie";
@@ -124,7 +124,7 @@ function showWelcome() {
       posdesc = "Die Zeit verging im Fluge.";
       break;
     case "澳大利亚":
-      posdesc = "一起去大堡礁吧！";
+      posdesc = "一起去大堡礁吧!";
       break;
     case "加拿大":
       posdesc = "拾起一片枫叶赠予你";
@@ -140,16 +140,16 @@ function showWelcome() {
           posdesc = "讲段相声吧。";
           break;
         case "河北省":
-          posdesc = "山势巍巍成壁垒，天下雄关。铁马金戈由此向，无限江山。";
+          posdesc = "山势巍巍成壁垒,天下雄关。铁马金戈由此向,无限江山。";
           break;
         case "山西省":
-          posdesc = "展开坐具长三尺，已占山河五百余。";
+          posdesc = "展开坐具长三尺,已占山河五百余。";
           break;
         case "内蒙古自治区":
-          posdesc = "天苍苍，野茫茫，风吹草低见牛羊。";
+          posdesc = "天苍苍,野茫茫,风吹草低见牛羊。";
           break;
         case "辽宁省":
-          posdesc = "我想吃烤鸡架！";
+          posdesc = "我想吃烤鸡架!";
           break;
         case "吉林省":
           posdesc = "状元阁就是东北烧烤之王。";
@@ -158,7 +158,7 @@ function showWelcome() {
           posdesc = "很喜欢哈尔滨大剧院。";
           break;
         case "上海市":
-          posdesc = "众所周知，中国只有两个城市。";
+          posdesc = "众所周知,中国只有两个城市。";
           break;
         case "江苏省":
           switch (ipLoacation.result.ad_info.city) {
@@ -166,7 +166,7 @@ function showWelcome() {
               posdesc = "这是我挺想去的城市啦。";
               break;
             case "苏州市":
-              posdesc = "上有天堂，下有苏杭。";
+              posdesc = "上有天堂,下有苏杭。";
               break;
             default:
               posdesc = "散装是必须要散装的。";
@@ -174,18 +174,18 @@ function showWelcome() {
           }
           break;
         case "浙江省":
-          posdesc = "东风渐绿西湖柳，雁已还人未南归。";
+          posdesc = "东风渐绿西湖柳,雁已还人未南归。";
           break;
         case "河南省":
           switch (ipLoacation.result.ad_info.city) {
             case "郑州市":
-              posdesc = "豫州之域，天地之中。";
+              posdesc = "豫州之域,天地之中。";
               break;
             case "南阳市":
-              posdesc = "臣本布衣，躬耕于南阳。此南阳非彼南阳！";
+              posdesc = "臣本布衣,躬耕于南阳。此南阳非彼南阳!";
               break;
             case "驻马店市":
-              posdesc = "峰峰有奇石，石石挟仙气。嵖岈山的花很美哦！";
+              posdesc = "峰峰有奇石,石石挟仙气。嵖岈山的花很美哦!";
               break;
             case "开封市":
               posdesc = "刚正不阿包青天。";
@@ -199,22 +199,22 @@ function showWelcome() {
           }
           break;
         case "安徽省":
-          posdesc = "蚌埠住了，芜湖起飞。";
+          posdesc = "蚌埠住了,芜湖起飞。";
           break;
         case "福建省":
-          posdesc = "井邑白云间，岩城远带山。";
+          posdesc = "井邑白云间,岩城远带山。";
           break;
         case "江西省":
-          posdesc = "落霞与孤鹜齐飞，秋水共长天一色。";
+          posdesc = "落霞与孤鹜齐飞,秋水共长天一色。";
           break;
         case "山东省":
-          posdesc = "遥望齐州九点烟，一泓海水杯中泻。";
+          posdesc = "遥望齐州九点烟,一泓海水杯中泻。";
           break;
         case "湖北省":
-          posdesc = "来碗热干面！";
+          posdesc = "来碗热干面!";
           break;
         case "湖南省":
-          posdesc = "74751，长沙斯塔克。";
+          posdesc = "74751,长沙斯塔克。";
           break;
         case "广东省":
           posdesc = "老板来两斤福建人。";
@@ -223,46 +223,46 @@ function showWelcome() {
           posdesc = "桂林山水甲天下。";
           break;
         case "海南省":
-          posdesc = "朝观日出逐白浪，夕看云起收霞光。";
+          posdesc = "朝观日出逐白浪,夕看云起收霞光。";
           break;
         case "四川省":
           posdesc = "康康川妹子。";
           break;
         case "贵州省":
-          posdesc = "茅台，学生，再塞200。";
+          posdesc = "茅台,学生,再塞200。";
           break;
         case "云南省":
-          posdesc = "玉龙飞舞云缠绕，万仞冰川直耸天。";
+          posdesc = "玉龙飞舞云缠绕,万仞冰川直耸天。";
           break;
         case "西藏自治区":
-          posdesc = "躺在茫茫草原上，仰望蓝天。";
+          posdesc = "躺在茫茫草原上,仰望蓝天。";
           break;
         case "陕西省":
           posdesc = "来份臊子面加馍。";
           break;
         case "甘肃省":
-          posdesc = "羌笛何须怨杨柳，春风不度玉门关。";
+          posdesc = "羌笛何须怨杨柳,春风不度玉门关。";
           break;
         case "青海省":
           posdesc = "牛肉干和老酸奶都好好吃。";
           break;
         case "宁夏回族自治区":
-          posdesc = "大漠孤烟直，长河落日圆。";
+          posdesc = "大漠孤烟直,长河落日圆。";
           break;
         case "新疆维吾尔自治区":
-          posdesc = "驼铃古道丝绸路，胡马犹闻唐汉风。";
+          posdesc = "驼铃古道丝绸路,胡马犹闻唐汉风。";
           break;
         case "台湾省":
-          posdesc = "我在这头，大陆在那头。";
+          posdesc = "我在这头,大陆在那头。";
           break;
         case "香港特别行政区":
-          posdesc = "永定贼有残留地鬼嚎，迎击光非岁玉。";
+          posdesc = "永定贼有残留地鬼嚎,迎击光非岁玉。";
           break;
         case "澳门特别行政区":
-          posdesc = "性感荷官，在线发牌。";
+          posdesc = "性感荷官,在线发牌。";
           break;
         default:
-          posdesc = "带我去你的城市逛逛吧！";
+          posdesc = "带我去你的城市逛逛吧!";
           break;
       }
       break;
@@ -274,18 +274,18 @@ function showWelcome() {
   //根据本地时间切换欢迎语
   let timeChange;
   let date = new Date();
-  if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>，一日之计在于晨！";
-  else if (date.getHours() >= 11 && date.getHours() < 13) timeChange = "<span>中午好</span>，该摸鱼吃午饭了。";
-  else if (date.getHours() >= 13 && date.getHours() < 15) timeChange = "<span>下午好</span>，懒懒地睡个午觉吧！";
-  else if (date.getHours() >= 15 && date.getHours() < 16) timeChange = "<span>三点几啦</span>，一起饮茶呀！";
-  else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好！</span>";
-  else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";
-  else timeChange = "夜深了，早点休息，少熬夜。";
+  if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>,一日之计在于晨!";
+  else if (date.getHours() >= 11 && date.getHours() < 13) timeChange = "<span>中午好</span>,该摸鱼吃午饭了。";
+  else if (date.getHours() >= 13 && date.getHours() < 15) timeChange = "<span>下午好</span>,懒懒地睡个午觉吧!";
+  else if (date.getHours() >= 15 && date.getHours() < 16) timeChange = "<span>三点几啦</span>,一起饮茶呀!";
+  else if (date.getHours() >= 16 && date.getHours() < 19) timeChange = "<span>夕阳无限好!</span>";
+  else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>,夜生活嗨起来!";
+  else timeChange = "夜深了,早点休息,少熬夜。";
 
   try {
     //自定义文本和需要放的位置
     document.getElementById("welcome-info").innerHTML =
-      `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
+      `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴,${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里,当前的IP地址为: <span style="color:var(--theme-color)">${ip}</span>, ${posdesc}</b>`;
   } catch (err) {
     // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
   }
@@ -348,8 +348,8 @@ document.addEventListener("copy", function () {
     new Vue({
       data: function () {
         this.$notify({
-          title: "哎嘿！复制成功🍬",
-          message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
+          title: "哎嘿!复制成功🍬",
+          message: "若要转载最好保留原文链接哦,给你一个大大的赞!",
           position: 'top-left',
           offset: 50,
           showClose: true,
@@ -370,7 +370,7 @@ document.onkeydown = function (e) {
         data: function () {
           this.$notify({
             title: "你已被发现😜",
-            message: "小伙子，扒源记住要遵循GPL协议！",
+            message: "小伙子,扒源记住要遵循GPL协议!",
             position: 'top-left',
             offset: 50,
             showClose: true,
@@ -587,7 +587,7 @@ function owoBig() {
       // else if (dom.length == 1 && dom[0].className == 'tk-comment') owo_body = dom[0];
       else continue;
 
-      // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
+      // 禁用右键（手机端长按会出现右键菜单,为了体验给禁用掉）
       if (document.body.clientWidth <= 768) owo_body.addEventListener('contextmenu', e => e.preventDefault());
       // 鼠标移入
       owo_body.onmouseover = (e) => {
@@ -600,8 +600,8 @@ function owoBig() {
               left = (e.x - e.offsetX) - (width - e.path[0].clientWidth) / 2, // 盒子与屏幕左边距离
               top = e.y - e.offsetY; // 盒子与屏幕顶部距离
 
-            if ((left + width) > body.clientWidth) left -= ((left + width) - body.clientWidth + 10); // 右边缘检测，防止超出屏幕
-            if (left < 0) left = 10; // 左边缘检测，防止超出屏幕
+            if ((left + width) > body.clientWidth) left -= ((left + width) - body.clientWidth + 10); // 右边缘检测,防止超出屏幕
+            if (left < 0) left = 10; // 左边缘检测,防止超出屏幕
             // 设置盒子样式
             div.style.cssText = `display:flex; height:${height}px; width:${width}px; left:${left}px; top:${top}px;`;
             // 在盒子中插入图片
@@ -622,7 +622,7 @@ function owoBig() {
 
 /* 随便逛逛 start */
 // 随便逛逛
-// 发现有时会和当前页面重复，加一个判断
+// 发现有时会和当前页面重复,加一个判断
 function randomPost() {
   fetch('/baidusitemap.xml').then(res => res.text()).then(str => (new window.DOMParser()).parseFromString(str, "text/xml")).then(data => {
     let ls = data.querySelectorAll('url loc');
@@ -760,18 +760,18 @@ if (document.body.clientWidth > 992) {
   $(document).ready(function () {
     //部分自定义
     $("#myscoll").nekoScroll({
-      bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效
+      bgcolor: 'rgb(0 0 0 / .5)', //背景颜色,没有绳子背景图片时有效
       borderRadius: '2em',
       zoom: 0.9
     }
     );
-    //自定义（去掉以下注释，并注释掉其他的查看效果）
+    //自定义（去掉以下注释,并注释掉其他的查看效果）
     /*
     $("#myscoll").nekoScroll({
-        nekoname:'neko1', //nekoname，相当于id
+        nekoname:'neko1', //nekoname,相当于id
         nekoImg:'img/猫咪.png', //neko的背景图片
         scImg:"img/绳1.png", //绳子的背景图片
-        bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效
+        bgcolor:'#1e90ff', //背景颜色,没有绳子背景图片时有效
         zoom:0.9, //绳子长度的缩放值
         hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息
         right:'100px', //距离页面右边的距离
@@ -986,7 +986,7 @@ function popupMenu() {
               })
             } else {
               Snackbar.show({
-                text: '请允许读取剪贴板！',
+                text: '请允许读取剪贴板!',
                 pos: 'top-center',
                 showAction: false,
               })
@@ -1005,7 +1005,7 @@ function popupMenu() {
       pageY -= pageY + rmHeight - window.innerHeight;
     }
     mask = setMask();
-    // 滚动消失的代码和阅读进度有冲突，因此放到readPercent.js里面了
+    // 滚动消失的代码和阅读进度有冲突,因此放到readPercent.js里面了
     $(".rightMenu-item").click(() => {
       $('.rmMask').attr('style', 'display: none');
     })
@@ -1038,15 +1038,15 @@ function addLongtabListener(target, callback) {
     timer = setTimeout(() => {
       callback();
       timer = 0
-    }, 380) // 超时器能成功执行，说明是长按
+    }, 380) // 超时器能成功执行,说明是长按
   }
 
   target.ontouchmove = () => {
-    clearTimeout(timer) // 如果来到这里，说明是滑动
+    clearTimeout(timer) // 如果来到这里,说明是滑动
     timer = 0
   }
 
-  target.ontouchend = () => { // 到这里如果timer有值，说明此触摸时间不足380ms，是点击
+  target.ontouchend = () => { // 到这里如果timer有值,说明此触摸时间不足380ms,是点击
     if (timer) {
       clearTimeout(timer)
     }
@@ -1075,7 +1075,7 @@ function changeMouseMode() {
         data: function () {
           this.$notify({
             title: "切换右键模式成功🍔",
-            message: "当前鼠标右键已恢复为系统默认！",
+            message: "当前鼠标右键已恢复为系统默认!",
             position: 'top-left',
             offset: 50,
             showClose: true,
@@ -1093,7 +1093,7 @@ function changeMouseMode() {
         data: function () {
           this.$notify({
             title: "切换右键模式成功🍔",
-            message: "当前鼠标右键已更换为网站指定样式！",
+            message: "当前鼠标右键已更换为网站指定样式!",
             position: 'top-left',
             offset: 50,
             showClose: true,
@@ -1123,17 +1123,17 @@ function createtime1() {
     `Future is now 🍭🍭🍭`,
     `
         
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
+███    ███ ████ ███████   ███████
+████  ████  ██  ██   ███ ██     ██
+██ ████ ██  ██  ███████  ██     ██
+██  ██  ██  ██  ██  ██   ██     ██
+██      ██ ████ ██   ██   ███████
                                               
 `,
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By MIRO",
+    "©2023 By MIRO",
   ];
 
   setTimeout(
@@ -1154,7 +1154,7 @@ function createtime1() {
 createtime1();
 
 function createtime2() {
-  var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];
+  var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功,识别为「大聪明」`, `Photo captured: `, ` 🤪 `];
 
   setTimeout(
     console.log.bind(
@@ -1167,7 +1167,7 @@ function createtime2() {
     )
   );
 
-  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));
+  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临,大聪明", "color:white; background-color:#23c682", ""));
 
   setTimeout(
     console.warn.bind(
@@ -1227,7 +1227,7 @@ function switchNightMode() {
         data: function () {
           this.$notify({
             title: "关灯啦🌙",
-            message: "当前已成功切换至夜间模式！",
+            message: "当前已成功切换至夜间模式!",
             position: 'top-left',
             offset: 50,
             showClose: true,
@@ -1254,7 +1254,7 @@ function switchNightMode() {
         data: function () {
           this.$notify({
             title: "开灯啦🌞",
-            message: "当前已成功切换至白天模式！",
+            message: "当前已成功切换至白天模式!",
             position: 'top-left',
             offset: 50,
             showClose: true,
@@ -1283,12 +1283,12 @@ function share_() {
     // 截取标题
     var title = document.title;
     var subTitle = title.endsWith("| MIRO🥝") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('MIRO🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    navigator.clipboard.writeText('MIRO🥝的站内分享\n标题:' + subTitle + '\n链接:' + url + '\n欢迎来访!🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
           title: "成功复制分享信息🎉",
-          message: "您现在可以通过粘贴直接跟小伙伴分享了！",
+          message: "您现在可以通过粘贴直接跟小伙伴分享了!",
           position: 'top-left',
           offset: 50,
           showClose: true,
@@ -1299,10 +1299,10 @@ function share_() {
       }
     })
   } catch (err) {
-    console.error('复制失败！', err);
+    console.error('复制失败!', err);
   }
-  // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });
-  // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")
+  // new ClipboardJS(".share", { text: function () { return '标题:' + document.title + '\n链接:' + url } });
+  // btf.snackbarShow("本页链接已复制到剪切板,快去分享吧~")
 }
 
 // 防抖
@@ -1346,9 +1346,9 @@ document.addEventListener('visibilitychange', function () {
 
 * @Author  jiangjiazhi
 
-* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
+* @公历转农历:calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
 
-* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
+* @农历转公历:calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
 
 */
 
@@ -1742,7 +1742,7 @@ function leapDays(y) {
 
 /**
 
-* 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
+* 返回农历y年m月（非闰月）的总天数,计算m为闰月时的天数请使用leapDays方法
 
 * @param lunar Year
 
@@ -1754,7 +1754,7 @@ function leapDays(y) {
 
 function monthDays(y, m) {
 
-  if (m > 12 || m < 1) { return -1 }// 月份参数从1至12，参数错误返回-1
+  if (m > 12 || m < 1) { return -1 }// 月份参数从1至12,参数错误返回-1
 
   return ((lunarInfo[y - 1900] & (0x10000 >> m)) ? 30 : 29)
 
@@ -2424,28 +2424,28 @@ y = d.getFullYear();
 if (m == 9 && dd == 18) {
   document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+    Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻,振兴中华🪔");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 7 && dd == 7) {
   document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+    Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻,振兴中华🪔");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 12 && dd == 13) {
   document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+    Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻,振兴中华🪔");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 8 && dd == 14) {
   document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻，振兴中华🪔");
+    Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻,振兴中华🪔");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2454,11 +2454,11 @@ if (m == 8 && dd == 14) {
 // 节假日
 if (m == 10 && dd <= 3) {//国庆节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝祖国" + (y - 1949).toString() + "岁生日快乐！");
+    Swal.fire("祝祖国" + (y - 1949).toString() + "岁生日快乐!");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-if (m == 8 && dd == 15) {//搞来玩的，小日子投降
+if (m == 8 && dd == 15) {//搞来玩的,小日子投降
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");
     sessionStorage.setItem("isPopupWindow", "1");
@@ -2466,18 +2466,18 @@ if (m == 8 && dd == 15) {//搞来玩的，小日子投降
 }
 if (m == 1 && dd == 1) {//元旦节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire(y.toString() + "年元旦快乐！🎉");
+    Swal.fire(y.toString() + "年元旦快乐!🎉");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 3 && dd == 8) {//妇女节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("各位女神们，妇女节快乐！👩");
+    Swal.fire("各位女神们,妇女节快乐!👩");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
-l = ["非常抱歉，因为不可控原因，博客将于明天停止运营！", "好消息，日本没了！", "美国垮了，原因竟然是川普！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "你知道吗？站长很喜欢你哦！", "一分钟有61秒哦", "你喜欢的人跟别人跑了！"]
-if (m == 4 && dd == 1) {//愚人节，随机谎话
+l = ["非常抱歉,因为不可控原因,博客将于明天停止运营!", "好消息,日本没了!", "美国垮了,原因竟然是川普!", "微软垮了!", "你的电脑已经过载,建议立即关机!", "你知道吗？站长很喜欢你哦!", "一分钟有61秒哦", "你喜欢的人跟别人跑了!"]
+if (m == 4 && dd == 1) {//愚人节,随机谎话
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(l[Math.floor(Math.random() * l.length)]);
     sessionStorage.setItem("isPopupWindow", "1");
@@ -2485,49 +2485,49 @@ if (m == 4 && dd == 1) {//愚人节，随机谎话
 }
 if (m == 5 && dd == 1) {//劳动节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("劳动节快乐\n为各行各业辛勤工作的人们致敬！");
+    Swal.fire("劳动节快乐\n为各行各业辛勤工作的人们致敬!");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 5 && dd == 4) {//青年节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("青年节快乐\n青春不是回忆逝去,而是把握现在！");
+    Swal.fire("青年节快乐\n青春不是回忆逝去,而是把握现在!");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 5 && dd == 20) {//520
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");
+    Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧!💑");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 7 && dd == 1) {//建党节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！");
+    Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐!");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 9 && dd == 10) {//教师节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("各位老师们教师节快乐！👩‍🏫");
+    Swal.fire("各位老师们教师节快乐!👩‍🏫");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 12 && dd == 25) {//圣诞节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("圣诞节快乐！🎄");
+    Swal.fire("圣诞节快乐!🎄");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 8 && dd == 11) {//站长生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐！🥝");
+    Swal.fire("祝站长" + (y - 1998).toString() + "岁生日快乐!🥝");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 if (m == 6 && dd == 30) {//小猫咪生日
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐！🐱");
+    Swal.fire("祝小猫咪" + (y - 1999).toString() + "岁生日快乐!🐱");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2549,12 +2549,12 @@ if ((y == 2023 && m == 12 && dd == 22) || (y == 2024 && m == 12 && dd == 21) || 
 
 var lunar = calendarFormatter.solar2lunar();
 
-//农历采用汉字计算，防止出现闰月导致问题
+//农历采用汉字计算,防止出现闰月导致问题
 
 if ((lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初六") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初五") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初四") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初三") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初二") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初一") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "三十") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "廿九")) {
-  //春节，本来只有大年三十到初六，但是有时候除夕是大年二十九，所以也加上了
+  //春节,本来只有大年三十到初六,但是有时候除夕是大年二十九,所以也加上了
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire(y.toString() + "年新年快乐\n🎊祝你心想事成，诸事顺利🎊");
+    Swal.fire(y.toString() + "年新年快乐\n🎊祝你心想事成,诸事顺利🎊");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2589,7 +2589,7 @@ if ((lunar["IMonthCn"] == "八月" && lunar["IDayCn"] == "十五")) {
 if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {
   //重阳节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("重阳节快乐\n独在异乡为异客，每逢佳节倍思亲");
+    Swal.fire("重阳节快乐\n独在异乡为异客,每逢佳节倍思亲");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -2621,7 +2621,7 @@ const getStyle2 = (el, attr) => {
   return "";
 };
 
-// 为了屏蔽异步加载导致无法读取颜色值，这里统一用哈希表预处理
+// 为了屏蔽异步加载导致无法读取颜色值,这里统一用哈希表预处理
 const map = new Map();
 map.set('red', "rgb(241, 71, 71)");
 map.set('orange', "rgb(241, 162, 71)");
@@ -2703,7 +2703,7 @@ class Cursor {
 
 (() => {
   CURSOR = new Cursor();
-  // 需要重新获取列表时，使用 CURSOR.refresh()
+  // 需要重新获取列表时,使用 CURSOR.refresh()
 })();
 
 /* 听话鼠标 end */
@@ -2740,7 +2740,7 @@ class Cursor {
 //       document.querySelector('#newYear .newYear-time').innerHTML = '<span class="happyNewYear">新年快乐</p>';
 //     } else {
 //       // 大于0则还未过年
-//       document.querySelector('#newYear .title').innerHTML = '距离2023年春节：'
+//       document.querySelector('#newYear .title').innerHTML = '距离2023年春节:'
 
 //       // 大于一天则直接渲染天数
 //       if (second > 86400) {
@@ -2771,7 +2771,7 @@ class Cursor {
 //     });
 //   });
 // }
-// // Pjax适配：若没有开启Pjax这里直接是newYear()即可
+// // Pjax适配:若没有开启Pjax这里直接是newYear()即可
 // // 开了Pjax的用以下两句
 // document.addEventListener('pjax:complete', newYear);
 // document.addEventListener('DOMContentLoaded', newYear);
@@ -2804,12 +2804,12 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' ' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' ' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' ' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米,约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' ' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米,约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
-// 设置重复执行函数，周期1000ms
+// 设置重复执行函数,周期1000ms
 setInterval(() => {
   createtime();
 }, 1000);
@@ -2840,7 +2840,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
     var fps = Math.round(1000 / fs);
 
     lastFameTime = now;
-    // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS
+    // 不置 0,在动画的开头及结尾记录此值的差值算出 FPS
     allFrameCount++;
     frame++;
 
@@ -2890,7 +2890,7 @@ if (localStorage.getItem("reset_4") == undefined) {
       data: function () {
         this.$notify({
           title: "提示🍒",
-          message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新，当前已为您重置所有设置，祝您愉快！",
+          message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新,当前已为您重置所有设置,祝您愉快!",
           position: 'top-left',
           offset: 50,
           showClose: true,
@@ -2958,7 +2958,7 @@ function setColor(c) {
   localStorage.setItem("themeColor", c);
   // 刷新鼠标颜色
   CURSOR.refresh();
-  // 设置一个带有透明度的主题色，用于菜单栏的悬浮颜色
+  // 设置一个带有透明度的主题色,用于菜单栏的悬浮颜色
   var theme_color = map.get(c);
   var trans_theme_color = "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.7)";
   var high_trans_color = "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.5)";
@@ -3101,12 +3101,12 @@ function setBlur() {
 
 // 更换背景(原来Leonus的代码)
 // 存数据
-// name：命名 data：数据
+// name:命名 data:数据
 // function saveData(name, data) {
 //   localStorage.setItem(name, JSON.stringify({ time: Date.now(), data: data }));
 // }
 // 取数据
-// name：命名 time：过期时长,单位分钟,如传入30,即加载数据时如果超出30分钟返回0,否则返回数据
+// name:命名 time:过期时长,单位分钟,如传入30,即加载数据时如果超出30分钟返回0,否则返回数据
 // function loadData(name, time) {
 //   let d = JSON.parse(localStorage.getItem(name));
 //   // 过期或有错误返回 0 否则返回数据
@@ -3116,7 +3116,7 @@ function setBlur() {
 //   }
 //   return 0;
 // }
-// 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用
+// 上面两个函数如果你有其他需要存取数据的功能,也可以直接使用
 // 读取背景
 // try {
 //   let data = loadData("blogbg", 1440);
@@ -3212,7 +3212,7 @@ function getPicture_() {
       data: function () {
         this.$notify({
           title: "可以啦🍨",
-          message: "切换自定义背景成功！",
+          message: "切换自定义背景成功!",
           position: 'top-left',
           offset: 50,
           showClose: true,
@@ -3222,12 +3222,12 @@ function getPicture_() {
       }
     })
   }).catch(() => {
-    // 无效的图片链接，提示无效
+    // 无效的图片链接,提示无效
     new Vue({
       data: function () {
         this.$notify({
           title: "链接不对🤣",
-          message: "请输入有效的图片链接！",
+          message: "请输入有效的图片链接!",
           position: 'top-left',
           offset: 50,
           showClose: true,
@@ -3336,7 +3336,7 @@ function createWinbox() {
   winResize();
   window.addEventListener("resize", winResize);
 
-  // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
+  // 每一类我放了一个演示,直接往下复制粘贴 a标签 就可以,需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
   winbox.body.innerHTML = `
 <div class="settings" style="display: block;">
 <div id="article-container" style="padding:12px;">
@@ -3375,7 +3375,7 @@ function createWinbox() {
 
 
 <h2>二、字体设置</h2>
-<div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
+<div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站,平时用于个人学习交流,如有侵权请联系站长删除,谢谢! —— 致版权方</p>
 </div>
 <p id="swfs">
 <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
@@ -3464,7 +3464,7 @@ function createWinbox() {
 <h3>8. 自定义背景</h3>
 <details class="folding-tag" cyan><summary> 设置自定义背景 </summary>
               <div class='content'>
-              <p><center><input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.fomal.cc/img/home_bg.webp"></center></p><p><center><button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button></center></p>
+              <p><center><input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接,如 https://source.fomal.cc/img/home_bg.webp"></center></p><p><center><button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button></center></p>
               </div>
             </details>
 
@@ -3539,7 +3539,7 @@ function winResize() {
   }
 }
 
-// 切换状态，窗口已创建则控制窗口显示和隐藏，没窗口则创建窗口
+// 切换状态,窗口已创建则控制窗口显示和隐藏,没窗口则创建窗口
 function toggleWinbox() {
   if (document.querySelector("#meihuaBox")) {
     winbox.toggleClass("hide");

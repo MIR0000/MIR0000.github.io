@@ -6,7 +6,7 @@
   <link href="https://wangmingruo.github.io/atom.xml" rel="self"/>
   
   <link href="https://wangmingruo.github.io/"/>
-  <updated>2024-03-12T16:00:00.000Z</updated>
+  <updated>2024-03-20T10:31:14.054Z</updated>
   <id>https://wangmingruo.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习记录</title>
+    <link href="https://wangmingruo.github.io/posts/8ad1a9bd.html"/>
+    <id>https://wangmingruo.github.io/posts/8ad1a9bd.html</id>
+    <published>2024-03-20T10:25:26.082Z</published>
+    <updated>2024-03-20T10:31:14.054Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="本周学习大纲">本周学习大纲</h3><ol><li><strong>准备竞赛</strong></li></ol><h3 id="本周学习日历">本周学习日历</h3><table><thead><tr><th>日历</th><th>学习内容</th><th>完成情况</th></tr></thead><tbody><tr><td>星期一</td><td>AI办公培训</td><td>已完成</td></tr><tr><td>星期二</td><td>AI办公培训</td><td>已完成</td></tr><tr><td>星期三</td><td>AI办公培训</td><td>已完成</td></tr><tr><td>星期四</td><td>AI办公培训</td><td>已完成</td></tr><tr><td>星期五</td><td>AI办公培训</td><td>已完成</td></tr><tr><td>星期六</td><td>AI办公培训</td><td>已完成</td></tr></tbody></table><h3 id="本周学习收获">本周学习收获</h3><h4 id="学习的spark的语法和API用法">学习的spark的语法和API用法</h4><h5 id="完成状态：">完成状态：</h5><p>已完成本周任务</p><h5 id="学习内容：">学习内容：</h5><ol><li>AI办公培训</li></ol><p>学习收获</p><p>学习了Excel表格的各种使用方法</p><h3 id="下周学习大纲">下周学习大纲</h3><ol><li><strong>AI办公比赛培训</strong>：继续参与AI办公比赛的技能培训</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;本周学习大纲&quot;&gt;本周学习大纲&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;准备竞赛&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;本周学习日历&quot;&gt;本周学习日历&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日历&lt;/th&gt;
+&lt;th&gt;学习内容&lt;</summary>
+      
+    
+    
+    
+    <category term="学习记录" scheme="https://wangmingruo.github.io/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="对话空间小组学习周报" scheme="https://wangmingruo.github.io/tags/%E5%AF%B9%E8%AF%9D%E7%A9%BA%E9%97%B4%E5%B0%8F%E7%BB%84%E5%AD%A6%E4%B9%A0%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown语法</title>
@@ -48,9 +81,9 @@
     <link href="https://wangmingruo.github.io/posts/8ad1a9bc.html"/>
     <id>https://wangmingruo.github.io/posts/8ad1a9bc.html</id>
     <published>2024-03-11T10:38:14.793Z</published>
-    <updated>2024-03-15T04:45:18.546Z</updated>
+    <updated>2024-03-20T10:28:51.676Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="本周学习大纲">本周学习大纲</h3><ol><li><strong>准备竞赛</strong></li></ol><h3 id="本周学习日历">本周学习日历</h3><table><thead><tr><th>日历</th><th>学习内容</th><th>完成情况</th></tr></thead><tbody><tr><td>星期一</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期二</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期三</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期四</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期五</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期六</td><td>spark学习</td><td>已完成</td></tr></tbody></table><h3 id="本周学习收获">本周学习收获</h3><h4 id="学习的spark的语法和API用法">学习的spark的语法和API用法</h4><h5 id="完成状态：">完成状态：</h5><p>已完成本周任务</p><h5 id="学习内容：">学习内容：</h5><ol><li>学习spark的常用API用法</li></ol><p>学习收获</p><p>对spark的API的进行了学习并做了知识笔记</p><h3 id="下周学习大纲">下周学习大纲</h3><ol><li><strong>spark学习</strong>：继续对spark深入学习</li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="本周学习大纲">本周学习大纲</h3><ol><li><strong>准备竞赛</strong></li></ol><h3 id="本周学习日历">本周学习日历</h3><table><thead><tr><th>日历</th><th>学习内容</th><th>完成情况</th></tr></thead><tbody><tr><td>星期一</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期二</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期三</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期四</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期五</td><td>spark学习</td><td>已完成</td></tr><tr><td>星期六</td><td>spark学习</td><td>已完成</td></tr></tbody></table><h3 id="本周学习收获">本周学习收获</h3><h4 id="学习的spark的语法和API用法">学习的spark的语法和API用法</h4><h5 id="完成状态：">完成状态：</h5><p>已完成本周任务</p><h5 id="学习内容：">学习内容：</h5><ol><li>学习spark的常用API用法</li></ol><p>学习收获</p><p>对spark的API的进行了学习并做了知识笔记</p><h3 id="下周学习大纲">下周学习大纲</h3><ol><li><strong>AI办公比赛培训</strong>:学习办公软件的使用以及AI在办公方面的运用</li></ol>]]></content>
     
     
       
@@ -278,7 +311,7 @@
     <title>学习记录</title>
     <link href="https://wangmingruo.github.io/posts/8ad1a2bc.html"/>
     <id>https://wangmingruo.github.io/posts/8ad1a2bc.html</id>
-    <published>2023-12-17T16:00:00.000Z</published>
+    <published>2023-12-24T11:38:39.973Z</published>
     <updated>2024-03-15T04:44:02.909Z</updated>
     
     <content type="html"><![CDATA[<h3 id="本周学习大纲">本周学习大纲</h3><ol><li><strong>搭建个人博客</strong></li><li><strong>期末高数复习</strong></li><li><strong>期末线代复习</strong></li><li><strong>JavaSE学习</strong></li></ol><h3 id="本周学习日历">本周学习日历</h3><table><thead><tr><th>日历</th><th>学习内容</th><th>完成情况</th></tr></thead><tbody><tr><td>星期一</td><td>复习高数/JavaSE学习/JavaSE复习</td><td>已完成</td></tr><tr><td>星期二</td><td>复习线代/JavaSE学习</td><td>已完成</td></tr><tr><td>星期三</td><td>复习英语/JavaSE学习/JavaSE复习</td><td>已完成</td></tr><tr><td>星期四</td><td>复习Python/JavaSE学习</td><td>已完成</td></tr><tr><td>星期五</td><td>复习数逻/JavaSE学习</td><td>已完成</td></tr><tr><td>星期六</td><td>复习线代/JavaSE复习</td><td>已完成</td></tr><tr><td>星期天</td><td>复习高数/JavaSE复习</td><td>已完成</td></tr></tbody></table><h3 id="本周学习收获">本周学习收获</h3><h4 id="JavaSE的学习与复习">JavaSE的学习与复习</h4><h5 id="完成状态：">完成状态：</h5><p>已完成本周任务</p><h5 id="学习内容：">学习内容：</h5><ol><li>完成了高数的复习</li><li>完成了线代的复习</li><li>完成了英语的复习</li><li>完成了JavaSE的复习与学习</li></ol><h5 id="学习收获">学习收获</h5><p>对JavaSE的查漏补缺并做了代码的知识笔记</p><h3 id="下周学习大纲">下周学习大纲</h3><ol><li><strong>JavaSE复习</strong>：复习面向对象基础的this关键字，构造器，封装，JavaBean。</li><li><strong>复习期末考试</strong>：复习高数/线代/英语</li></ol>]]></content>
